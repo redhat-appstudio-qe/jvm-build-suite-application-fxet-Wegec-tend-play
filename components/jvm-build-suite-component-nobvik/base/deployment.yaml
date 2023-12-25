@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-nobvik
     spec:
       containers:
-      - image: hacbs-jvm-build-test-project:latest
+      - image: quay.io/redhat-appstudio-qe/jvm-build-afip-tenant/jvm-build-suite-application-fxet/jvm-build-suite-component-nobvik@sha256:b2ac1001302da9eecec7f4915e55805eee484f9bc80f6df535eaaca615e6fa87
         name: hacbs-jvm-build-test-project
         ports:
         - containerPort: 8081
