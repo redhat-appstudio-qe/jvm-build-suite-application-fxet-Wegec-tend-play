@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-nobvik
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/jvm-build-afip-tenant/jvm-build-suite-application-fxet/jvm-build-suite-component-nobvik@sha256:b2ac1001302da9eecec7f4915e55805eee484f9bc80f6df535eaaca615e6fa87
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
